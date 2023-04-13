@@ -9,10 +9,9 @@ spring:
             provider: spring
             client-id: ${OAUTH_CLIENTID}
             client-secret: ${OAUTH_SECRET}
-            scope:
-              - openid
+            scope: ${OAUTH_SCOPE}
             authorization-grant-type: authorization_code
-            redirect-uri: http://localhost:4000/auth/provider/callback
+            redirect-uri: ${OAUTH_ISSUER_URI}
         provider:
           spring:
             issuer-uri: ${OAUTH_ISSUER_URI}
