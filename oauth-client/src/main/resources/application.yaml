@@ -11,7 +11,7 @@ spring:
             client-secret: ${OAUTH_SECRET}
             scope: ${OAUTH_SCOPE}
             authorization-grant-type: authorization_code
-            redirect-uri: ${OAUTH_ISSUER_URI}
+            redirect-uri: ${OAUTH_REDIRECT_URI}
         provider:
           spring:
             issuer-uri: ${OAUTH_ISSUER_URI}
